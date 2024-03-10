@@ -1,1063 +1,647 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5rem 4.5rem;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 9;
-  }
-  
-  .logo {
-    width: 132px;
-    height: 32px;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav ul a {
-    padding: 0.5rem 0.5rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0 0.125rem;
-    color: #fff;
-  }
-  
-  nav .icons {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    position: relative;
-  }
-  
-  nav .icons span {
-    background-image: url(assets/hexagon-green.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1.625rem;
-    width: 1.625rem;
-    display: block;
-    background-size: 1.625rem;
-  }
-  
-  nav .icons i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  #hero {
-    padding-top: 14.75rem;
-    padding-bottom: 17.5rem;
-    background-image: url(assets/header-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    position: relative;
-  }
-  
-  .text {
-    text-align: center;
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 6.5rem;
-    padding-bottom: 3rem;
-    position: relative;
-  }
-  
-  .text h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-  }
-  
-  .text p {
-    margin-bottom: 2rem;
-    color: #dfe5ec;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 18px;
-  }
-  
-  .text a {
-    padding: 1rem 2.25rem;
-    background-color: #14bf98;
-    color: #fff;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-  }
-  
-  #overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.4;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-  #intro {
-    margin: 7rem 0px;
-  }
-  
-  #intro .container {
-    padding: 0px 5%;
-    display: grid;
-    grid-template-columns: 1fr 1.7fr;
-    grid-template-rows: 1fr;
-    column-gap: 2rem;
-  }
-  
-  .first {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-  }
-  
-  #intro .section-title,
-  #callme .section-title {
-    color: #14bf98;
-    font: 500 0.81rem / 1.12rem "Montserrat", sans-serif;
-  }
-  
-  .basic-1 h2 {
-    margin-bottom: 1.3rem;
-    color: #484a46;
-    font: 700 1.81rem / 2.12rem "Montserrat", sans-serif;
-  }
-  
-  #intro p,
-  #cards p {
-    color: #484a46;
-    font: 400 1rem / 1.5rem "Montserrat", sans-serif;
-    margin-bottom: 1rem;
-  }
-  
-  #intro .testimonial-text {
-    font-style: italic;
-  }
-  
-  #intro .testimonial-author {
-    color: #484a46;
-    font: 700 1rem/ 1.37rem "Montserrat", sans-serif;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css ">
+</head>
 
-  .second {
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .second img {
-    width: 85%;
-  }
-  
-  #cards h2 {
-    color: #484a46;
-    font: 700 1.2rem / 2.12rem "Montserrat", sans-serif;
-  }
-  #cards h2 {
-    color: #484a46;
-    font: 700 1.2rem / 2.12rem "Montserrat", sans-serif;
-  }
-  
-  #cards .container {
-    padding: 0px 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 1rem;
-  }
-  
-  #cards .card img {
-    width: 120px;
-    height: 100px;
-  }
-  
-  #cards .card {
-    padding: 1rem;
-  }
+<body>
+    <div class="wrapper">
+        <nav>
+            <a href="">
+                <img src="assets/logo.svg" class="logo" alt="Logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="#hero">Home</a>
+                </li>
+                <li>
+                    <a href="#intro">Intro</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#callme">Call Me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#about">
+                        About
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="" class="icons">
+                        <span></span>
+                        <i class="fa-brands fa-facebook-f">
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="icons">
+                        <span></span>
+                        <i class="fa-brands fa-twitter">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <div id="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+        <main>
+            <div id="hero">
+                <div id="overlay"></div>
+                <div class="text">
+                    <h1>Business Template</h1>
+                    <p>
+                        Aria is a top consultancy company specializing in business growth
+                        using online marketing and conversion optimization tactics
+                    </p>
+                    <a href="">Discover</a>
+                </div>
+            </div>
+            <div id="intro" class="basic-1">
+                <div class="container">
+                    <div class="first">
+                        <div>
+                            <p class="section-title">INTRO</p>
+                            <h2>We Offer Some Of The Best Business Growth Services In Town</h2>
+                            <p> Launching a new company or developing the market position of an existing one can be
+                                quite an overwhelming processs at times.</p>
+                            <p class="testimonial-text">"Our mission here at Aira is to get you through those tough
+                                moments relying on our team's expertise in starting and growing companies."</p>
+                            <h3 class="testimonial-author">Louise Donovan - CEO</h3>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <img src="assets/intro-office.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="container">
+                    <div class="card">
+                        <img src="https://www.ominibiz.com.ng/images/Analysis.PNG">
+                        <h2>
+                            Environment Analysis
+                        </h2>
+                        <p>The starting point of any success story is knowing your current position in the business
+                            environment</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.ominibiz.com.ng/images/Planning.PNG">
+                        <h2>
+                            Development Planning
+                        </h2>
+                        <p>After completing the environmental analysis the next stage is to design and plan your
+                            development strategy</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.ominibiz.com.ng/images/Evaluation.PNG">
+                        <h2>
+                            Execution & Evaluation
+                        </h2>
+                        <p>In this phase you will focus on executing the actions plan and evaluating the results after
+                            each marketing campaign</p>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="section-heading">
+                    <p class="green">Services</p>
+                    <h2>Choose The Service Package That Suits Your Needs</h2>
+                </div>
+                <div class="section-wrapper">
+                    <div class="service">
+                        <img src="assets/services-1.jpg" alt="Service 1">
+                        <div class="content">
+                            <h3>Off The Ground Off The Ground</h3>
+                            <p>
+                                Perfect for fresh ideas or young startups, this package will
+                                help get the business off the ground
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-square"></i>
+                                    Environment and competition
+                                </li>
+                                <li>
+                                    <i class="fas fa-square"></i>
+                                    Designing the marketing plan
+                                </li>
+                            </ul>
+                            <h4>Starting at $199</h4>
+                            <a href="">Details</a>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <img src="assets/services-2.jpg" alt="Service 2">
+                        <div class="content">
+                            <h3>Accelerated Growth</h3>
+                            <p>
+                                Use this service pack to give your company the necessary
+                                impulse to become an industry leader
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-square"></i>
+                                    Environment and competition
+                                </li>
+                                <li>
+                                    <i class="fas fa-square"></i>
+                                    Designing the marketing plan
+                                </li>
+                            </ul>
+                            <h4>Starting at $299</h4>
+                            <a href="">Details</a>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <img src="assets/services-3.jpg" alt="Service 3">
+                        <div class="content">
+                            <h3>Market Domination</h3>
+                            <p>
+                                You already are a reference point in your industry now you
+                                need to learn about acquisitions
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-square"></i>
+                                    Environment and competition
+                                </li>
+                                <li>
+                                    <i class="fas fa-square"></i>
+                                    Designing the marketing plan
+                                </li>
+                            </ul>
+                            <h4>Starting at $299</h4>
+                            <a href="">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hw1">
+                <div class="one"><img src="assets/details-1-background.jpg" alt=""></div>
+                <div class="two">
+                    <div class="section-heading">
+                        <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
+                    </div>
+                    <div class="content">
+                        <div class="fll">
+                            <div>1</div>
+                            <h3>How Can Aria Help Your Business</h3>
+                        </div>
+                        <p>At Aria solutions, we’ve taken the consultancy concept one step further by offering a full
+                            service management organization with expertise.</p>
+                        <div class="fll">
+                            <div class="nd">2</div>
+                            <h3>Great Strategic Business Planning</h3>
+                        </div>
+                        <div class="fll">
+                            <div class="rd">3</div>
+                            <h3>Online Marketing Campaigns</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="subhea">
+                        <h3><i class="fa-solid fa-table-cells"></i> Business</h3>
+                        <h3><i class="fa-solid fa-table-cells"></i> Expertise</h3>
+                        <h3><i class="fa-solid fa-table-cells"></i> Quality</h3>
+                    </div>
+                    <h3>Business Services For Companies</h3>
+                    <p>Aria provides the most innovative and customized business services in the industry. Our <a
+                            href="#services">Services</a>
+                        section shows how flexible we are for all types of budgets.</p>
+                    <div class="perc">
+                        <p>Business Development 100%</p>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="perc">
+                        <p>Opportunity Spotting 76%</p>
+                        <div class="bar1"></div>
+                    </div>
+                    <div class="perc">
+                        <p>Online Marketing 90%</p>
+                        <div class="bar2"></div>
+                    </div>
+                </div>
+                <div class="four">
+                    <img src="assets/details-2-background.jpg" alt="">
+                </div>
+            </div>
+            <div id="testimonials">
+                <div class="section-heading">
+                    <h2>Read Our Customer Testimonials</h2>
+                    <p>Our clients are our partners and we can not imagine a better future for our company without
+                        helping them reach their objectives</p>
+                </div>
+                <div class="section-wrapper">
+                    <div class="testimonial">
+                        <img src="assets/testimonial-1.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a
+                            profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-2.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a
+                            profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-3.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a
+                            profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-4.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a
+                            profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-5.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a
+                            profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-6.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a
+                            profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="callme">
+                <div class="container">
+                    <div class="left">
+                        <p class="section-title">CALL ME</p>
+                        <h2>Have Us Contact You By Filling And Submitting The Form</h2>
+                        <p>You are just a few steps away from a personalized offer. Just fill in the form and send it to
+                            us and we'll get right back with a call to help you decide what service package works.</p>
+                        <ul>
+                            <li>It's very easy just fill in the form so we can call</li>
+                            <li>During the call we'll require some info about the company</li>
+                            <li>Don't hesitate to email us for any questions or inquiries</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <form>
+                            <div class="form-group">
+                                <input type="text">
+                                <label>Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text">
+                                <label>Phone</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text">
+                                <label>Email</label>
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option>Instersted In</option>
+                                    <option>Off the Ground</option>
+                                    <option>Marked Domain</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span id="callme-checkbox">
+                                    I agree with Aria's stated
+                                    <a href="#">Privacy Policy</a>
+                                    and
+                                    <a href="#">Terms & Conditions</a>
+                                </span>
+                            </div>
+                            <button>CALL ME</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <div class="section-heading">
+                    <p class="green">Projects</p>
+                    <h2>Projects That We're Proud Of</h2>
+                </div>
+                <div class="categories">
+                    <a href="" class="category active">Show All</a>
+                    <a href="" class="category">Design</a>
+                    <a href="" class="category">Development</a>
+                    <a href="" class="category">Marketing</a>
+                    <a href="" class="category">SEO</a>
+                </div>
+                <div class="section-wrapper">
+                    <div class="project">
+                        <img src="assets/project-1.jpg" alt="">
+                        <p>Online Banking</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-2.jpg" alt="">
+                        <p>Classic Industry</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-3.jpg" alt="">
+                        <p>BoomBap Audio</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-4.jpg" alt="">
+                        <p>Van Moose</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-5.jpg" alt="">
+                        <p>Online Banking</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-6.jpg" alt="">
+                        <p>Online Banking</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-7.jpg" alt="">
+                        <p>Online Banking</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project-8.jpg" alt="">
+                        <p>Online Banking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cons">
+                <div class="boox">
+                    <div class="section-heading">
+                        <h2>Our Team Of Consultants</h2>
+                        <div>
+                            <p>We're only as strong and as knowledgeable as our team. So here are the men and women
+                                which
+                                help customers meet goals and grow companies</p>
+                        </div>
+                    </div>
+                    <div class="fllex">
+                        <div>
+                            <div class="pic"><img src="assets/team-1.png" alt=""></div>
+                            <div class="content">
+                                <p>John Whitelong</p>
+                                <h3>General Manager</h3>
+                                <a href="" class="icons">
+                                    <span></span>
+                                    <i class="fa-brands fa-facebook-f">
+                                    </i>
+                                </a>
+                                <a href="" class="icons">
+                                    <span></span>
+                                    <i class="fa-brands fa-twitter">
+                                    </i>
+                                </a>
 
-  #services {
-    background-color: #fbfbfb;
-    padding: 6.25rem 4.5rem;
-  }
-  
-  #services .section-heading,
-  #projects .section-heading,
-  #projects .categories,
-  #testimonials .section-heading {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  #services .section-heading h2,
-  #projects .section-heading h2,
-  #contact .section-heading h2,
-  #testimonials .section-heading h2 ,.hw1 h2{
-    color: #484a46;
-    margin-bottom: 3.25rem;
-    font-family: Montserrat;
-    font-size: 1.75rem;
-  }
-  
-  .green {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #14bf98;
-    margin-bottom: 0.5rem;
-  }
-  
-  #services .section-wrapper,
-  #projects .section-wrapper,
-  #testimonials .section-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #services .section-wrapper {
-    align-items: flex-start;
-  }
-  
-  .service {
-    width: 30%;
-    background-color: #fff;
-  }
-  
-  .service img {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  
-  .service .content {
-    position: relative;
-    padding: 2.25rem 2.5rem 2.125rem 2.5rem;
-  }
-  
-  .service .content h3 {
-    text-align: center;
-    margin-bottom: 0.75rem;
-    font-size: 1.375rem;
-    color: #484a46;
-  }
-  
-  .service .content p {
-    line-height: 1.56rem;
-    margin-bottom: 1rem;
-  }
-  
-  .service .content ul {
-    margin-bottom: 1.5rem;
-  }
-  
-  .service .content p,
-  .service .content ul {
-    color: #787976;
-  }
-  
-  .service .content ul li {
-    padding-left: 0.625rem;
-    margin-bottom: 0.325rem;
-    display: flex;
-  }
-  
-  .service .content ul li i {
-    color: #14bf98;
-    font-size: 0.5rem;
-    line-height: 1.375rem;
-    margin-right: 0.625rem;
-  }
-  
-  .service .content h4 {
-    margin-bottom: 0.25rem;
-    color: #484a46;
-    font: 700 1rem / 1.5rem "Montserrat", sans-serif;
-    text-align: center;
-  }
-  
-  .service .content a {
-    display: inline-block;
-    padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
-    border: 0.125rem solid #14bf98;
-    border-radius: 0.25rem;
-    background-color: #14bf98;
-    color: #fff;
-    font: 700 0.75rem / 0 "Montserrat", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.2s;
-    position: absolute;
-    left: 35%;
-    bottom: -24px;
-  }
-  .hw1{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    width:100%;
-  }
-  .one{
-    grid-row:1/2;
-    grid-column:1/2;
-  }
-  
-  .two .section-heading{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    width:40vw;
-    height: 6vh;
-  }
-  .two .content .fll:first-child{
-    padding-bottom:2px;
-  }
-  .two p{
-    color: #787976;
-    margin-left:3.5vw ;
-    width: 25vw;
-  }
-  .two .fll{
-    display:flex;
-    margin:2%;
-    padding-bottom:8px;
-  }
-  .fll div{
-    background-color:#14bf98;
-    padding:7px 13px;
-    border-radius:100%;
-    color:white;
-    font-weight:700;
-    margin-right: 10px;
-  }
-  .content .nd{
-    padding:7px 13px;
-    height:5vh;
-  }
-  .content .nd,.content .rd{
-    background-color: white;
-    color: #000;
-    border: black solid 2px;
-  }
-  /* .content .nd,.content .rd:hover{
-    border: #14bf98 solid 2px;
-    color: #14bf98;
-  } */
-  .fll :hover{
-    color: #14bf98;
-    border-color: #14bf98;
-  }
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic"><img src="assets/team-2.png" alt=""></div>
+                            <div class="content">
+                                <p>Veronique Smith</p>
+                                <h3>Business Developer</h3>
+                                <div class="ico"><a href="" class="icons">
+                                        <span></span>
+                                        <i class="fa-brands fa-facebook-f">
+                                        </i>
+                                    </a>
+                                    <a href="" class="icons">
+                                        <span></span>
+                                        <i class="fa-brands fa-twitter">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic"><img src="assets/team-3.png" alt=""></div>
+                            <div class="content">
+                                <p>Chris Zimerman</p>
+                                <h3>Online Marketer</h3>
+                                <div class="ico"><a href="" class="icons">
+                                        <span></span>
+                                        <i class="fa-brands fa-facebook-f">
+                                        </i>
+                                    </a>
+                                    <a href="" class="icons">
+                                        <span></span>
+                                        <i class="fa-brands fa-twitter">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic"><img src="assets/team-4.png" alt=""></div>
+                            <div class="content">
+                                <p>Mary Villalonga</p>
+                                <h3>Community Manager</h3>
+                                <div class="ico"><a href="" class="icons">
+                                        <span></span>
+                                        <i class="fa-brands fa-facebook-f">
+                                        </i>
+                                    </a>
+                                    <a href="" class="icons">
+                                        <span></span>
+                                        <i class="fa-brands fa-twitter">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about">
+                <div class="dis">
+                    <img src="assets/about.jpg" alt="">
+                </div>
+                <div class="conte">
+                    <p class="green">ABOUT</p>
+                    <h2>We're Passionate About Delivering Growth Services</h2>
+                    <p class="gre">Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
+                    <ul>
+                        <li>Everything we recommend has direct positive impact</li>
+                        <li>You will become an important partner of our company</li>
+                    </ul>
+                    <div class="str">
+                        <div class="one">
+                            <div class="num">231</div>
+                            <div class="letter">
+                                <p>Happy</p>
+                                <p>Users</p>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="num">121</div>
+                            <div class="letter">
+                                <p>Issues</p>
+                                <p>Solved</p>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="num">159</div>
+                            <div class="letter">
+                                <p>Good</p>
+                                <p>Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="left">
+                    <div class="section-heading">
+                        <p class="green">Contact</p>
+                        <h2>Get In Touch Using The Form</h2>
+                    </div>
+                    <p class="coffee">You can stop by our office for a cup of coffee and just use the contact form below
+                        for any questions and inquiries</p>
+                    <div class="info">
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            22nd Innovative Street, San Francisco, CA 94043, US
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:911234567890"> +91 123 456 7890</a>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:911234567890"> +91 123 456 7890</a>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:office@domain.com"> office@domain.com</a>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <h3>Follow Aria On Social Media</h3>
+                        <div class="icons">
+                            <a href="">
+                                <span></span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <span></span>
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <span></span>
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                            <a href="">
+                                <span></span>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="">
+                                <span></span>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="">
+                                <span></span>
+                                <i class="fa-brands fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text">
+                            <label for="">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <label for="">Your Message</label>
+                        </div>
+                        <div class="form-group agree">
+                            <input type="checkbox" name="" id="">
+                            I agree with Aria's stated
+                            <a href="">Privacy Policy</a>
+                            and
+                            <a href="">Terms Conditions</a>
+                        </div>
+                        <button type="submit">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="top">
+                    <div class="left">
+                        <h2>Few Words About Aria</h2>
+                        <p>We're passionate about delivering the best business growth services for companies just
+                            starting out as startups or industry players that have established their market position a
+                            long tima ago.</p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <h2>Links</h2>
+                            <li>
+                                <a href="">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h2>Tools</h2>
+                            <li>
+                                <a href="">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h2>Partners</h2>
+                            <li>
+                                <a href="">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>
+                        Copyright &copy; 2024 All Rights Reserved - By
+                        <a href="">Rohit Jain</a>
+                    </p>
+                </div>
+            </footer>
 
-  .fll h3{
-    margin-top:7px ;
-  }
-  .two .content{
-    width: 56%;
-  }
-  .two{
-    grid-row:1/2;
-    grid-column:2/3;
-    display:flex;
-    width:100%;
-    height:100%;
-    flex-direction: column;
-    justify-content:center;
-    padding-left: 4vw;
-  }
-  
-  .three{
-    grid-row:2/3;
-    grid-column:1/2;
-   
-  }
-  .three .subhea{
-    display:flex;
-    color:#c1cace;
-    margin-left: 15vw;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
-  }
-  .three .subhea h3{
-    margin-right:1.5vw;
-  }
-  .three .subhea h3:first-child{
-    color:#14bf98;
-  }
-  .three>h3,.three>p,.three .perc{
-    margin-left: 15vw;
-    width:30vw;
-  }
-  .three p{
-    color: #787976;
-  }
-  .three p a{
-    text-decoration:underline;
-    color:#14bf98;
-  }
-  .three>h3{
-    margin-bottom: 2vh;
-  }
-  .three>p{
-    margin-bottom: 2vh;
-  }
-  .three .perc p{
-    color: #484a46;
-    font: 600 0.875rem / 1.25rem "Open Sans", sans-serif;
-  }
-  .three .perc .bar{
-    background-color: #14bf98;
-    height: 2.8vh;
-    width:30vw;
-    margin-bottom: 2.6vh;
-    border-radius: 3px;
-  }
-  .three .perc .bar1{
-    background-color: #14bf98;
-    height: 2.8vh;
-    width:22vw;
-    margin-bottom: 2.6vh;
-    border-radius: 3px;
-  }
-  .three .perc .bar2{
-    background-color: #14bf98;
-    height: 2.8vh;
-    width:26vw;
-    margin-bottom: 2.6vh;
-    border-radius: 3px;
-  }
-  .four{
-    grid-row:2/3;
-    grid-column:2/3;
-  }
-  .hw1 img{
-    display:block;
-    width:100%;
-    column:100%;
-  }
-  #testimonials {
-    padding: 6.25rem 4.5rem;
-  }
-  
-  #testimonials .section-heading {
-    width: 50%;
-  }
-  
-  #testimonials .section-heading h2 {
-    margin-bottom: 1rem;
-  }
-  
-  #testimonials .section-heading p {
-    color: #787976;
-    line-height: 1.5;
-  }
-  
-  #testimonials .section-wrapper {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    display: grid;
-    grid-auto-columns: 33%;
-    grid-auto-flow: column;
-  }
-  
-  #testimonials .section-wrapper::-webkit-scrollbar {
-    height: 8px;
-    background-color: #aaa;
-    border-radius: 5px;
-  }
-  
-  #testimonials .section-wrapper::-webkit-scrollbar-thumb {
-    background-color: green;
-    border-radius: 5px;
-  }
-  
-  #testimonials .testimonial {
-    padding: 0.5rem 1rem;
-    margin: 0 1rem;
-    text-align: center;
-  }
-  
-  #testimonials .testimonial img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  #testimonials .testimonial p {
-    color: #787976;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    font-style: i;
-  }
-  
-  #testimonials .testimonial h4 {
-    color: #484a46;
-  }
+        </main>
+    </div>
+</body>
 
-  #callme {
-    background-color: #113448;
-  }
-  
-  #callme h2 {
-    margin-bottom: 1.3rem;
-    color: white;
-    font: 700 1.81rem / 2.12rem "Montserrat", sans-serif;
-    margin-top: 0.5rem;
-  }
-  
-  #callme p,
-  #callme li {
-    color: #dfe5ec;
-    font: 400 1rem / 1.5rem "Montserrat", sans-serif;
-  }
-  
-  #callme .container {
-    padding: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 2rem;
-  }
-  
-  #callme ul {
-    margin-top: 1rem;
-    list-style-type: square;
-    padding-left: 12px;
-  }
-  
-  #callme li {
-    margin-bottom: 0.6rem;
-  }
-  
-  #callme li::marker {
-    color: #14bf98;
-  }
-  
-  #callme .left,
-  #callme .right {
-    padding: 5rem;
-  }
-  
-  #callme .right .form-group {
-    margin-bottom: 1.25rem;
-    position: relative;
-  }
-  
-  #callme .right .form-group label {
-    position: absolute;
-    left: 1.375rem;
-    top: 0.8125rem;
-    color: white;
-    font-size: 0.87rem;
-    transition: all 300ms;
-  }
-  
-  #callme .right input[type="text"],
-  select {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1.3125rem;
-    border-radius: 0.25rem;
-    width: 100%;
-    border: 1px solid #39728f;
-    background-color: #2a5d77;
-    color: #fff;
-  }
-  
-  #contact .right input[type="text"] {
-    height: 3rem;
-  }
-  
-  #contact input {
-    outline: white;
-  }
-  
-  #callme #callme-checkbox {
-    color: #dfe5ec;
-    font: 400 0.9rem / 1.5rem "Montserrat", sans-serif;
-  }
-  
-  #callme a {
-    color: #dfe5ec;
-    text-decoration: underline;
-  }
-  
-  #callme button {
-    padding: 0.9rem;
-    border-radius: 0.25rem;
-    width: 100%;
-    border: 1px solid #39728f;
-    background-color: #14bf98;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 1rem;
-    transition: ease-in-out 300ms;
-  }
-  
-  #callme button:hover {
-    background: transparent;
-    cursor: pointer;
-    border: 2px solid #14bf98;
-  }
-  
-  @media screen and (max-width: 600px) {
-    #callme .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      column-gap: 2rem;
-    }
-  
-    #callme .left,
-    .right {
-      padding: 1rem;
-    }
-  }
-  
-  #callme .right input[type="text"]:focus+label {
-    font-size: 0.7rem;
-    top: 0.2rem;
-  }
-  #projects {
-    padding: 6.25rem 4.5rem;
-  }
-  
-  #projects .categories {
-    width: 50%;
-    margin-bottom: 2rem;
-  }
-  
-  #projects .categories a {
-    background-color: #f1f4f7;
-    color: #7b7e85;
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    padding: 0.35rem 1.1rem;
-    margin: 0 0.25rem;
-    border-radius: 5px;
-  }
-  
-  #projects .categories a.active {
-    background-color: #14bf98;
-    color: #fff;
-  }
-  
-  #projects .project {
-    width: 25%;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  #projects .project img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: all 300ms;
-  }
-  
-  #projects .project p {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    opacity: 0;
-    transition: all 300ms;
-  }
-  
-  #projects .project:hover img {
-    transform: scale(1.2);
-  }
-  
-  #projects .project:hover p {
-    opacity: 1;
-  }
-
-  .cons .boox{
-    text-align: center;
-    margin-bottom: 43px;
-  }
-  .cons .boox div{
-    margin:10px 20px;
-  }
-  .cons .section-heading h2{
-    font: 700 1.81rem / 2.12rem "Montserrat", sans-serif;
-    margin-bottom:2.5vh;
-  }
-  .cons .section-heading p{
-    color: #787976;
-    width:40vw;
-    margin-left:30vw;
-    text-align: center;
-    margin-bottom: 4vh;
-  }
-  .cons .fllex{
-    display:flex;
-    justify-content: center;
-  }
-  .cons .content .icons{
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    position: relative;
-  }
-  .cons .content span {
-    background-image: url(assets/hexagon-green.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1.625rem;
-    width: 1.625rem;
-    display: block;
-    background-size: 1.625rem;
-  }
-  
-  .cons .content i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-  }
-  #about{
-    display:flex;
-    padding:12%;
-  }
-
-  #about .dis img{
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-  #about .dis,#about .conte{
-    height:50vh;
-    width: 35vw;
-  }
-  #about .conte{
-    padding-left:5vw;
-    padding-top:0.5vh;
-  }
-  #about .conte p,#about .conte ul{
-    color: #787976;
-  }
-  #about .conte .green{
-    color:#14bf98;
-    font-size: 0.8rem;
-    margin-bottom:2vh;
-  }
-  #about .conte h2{
-    margin-bottom:2vh;
-  }
-  #about .conte p{
-    margin-bottom:2vh;
-    line-height: 3.5vh;
-  }
-  #about .conte ul{
-    list-style:square;
-    margin-left:20px;
-    line-height: 3.5vh;
-  }
-  #about .conte ul li::marker {
-    color:#14bf98;;
-  }
-  #about .conte .str{
-    display: flex;
-    margin-top: 3vh;;
-  }
-  #about .conte .str .one{
-    
-    flex-grow: 1;
-    display:flex;
-    justify-content: space-between;
-    font-size: 0.875rem;
-    margin-right:5vw;
-    line-height: 0.5vh;
-  }
-  #about .conte .str .num{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.6rem;
-    font-weight:900;
-    color: #14bf98;
-  }
-  #about .conte .str .letter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height:1px;
-  }
-  #about .conte .letter p:nth-child(1){
-    font-size: 0.875rem;
-    padding-bottom:0px;
-    margin-bottom: -0.6px;
-    margin-left: 5px;
-    line-height: 1px;
-    padding-top:20px;
-    
-  }
-  #about .conte .letter p:nth-child(2){
-    font-size: 0.875rem;
-    margin-top:1px;
-    padding-top:0px;
-    margin-left: 5px;
-  }
-
-  #contact {
-    background-color: #fbfbfb;
-    padding: 6.25rem 4.5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  #contact .left {
-    width: 48%;
-  }
-  
-  #contact .section-heading h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  #contact .coffee,
-  #contact .info,
-  #contact .info a {
-    color: #787976;
-    margin-bottom: 1.25rem;
-  }
-  
-  #contact .info a {
-    padding-left: 0.15rem;
-    padding-right: 0.15rem;
-    text-decoration: underline;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-  
-  #contact .info i {
-    color: #14bf98;
-  }
-  
-  #contact .info p {
-    margin-bottom: 0.5rem;
-  }
-  
-  #contact h3 {
-    color: #484a46;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-  }
-  
-  #contact .icons a {
-    position: relative;
-    display: inline-block;
-    width: 3.25rem;
-    height: 3.25rem;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-  
-  #contact .icons a span {
-    position: absolute;
-    background-image: url(assets/hexagon-green.svg);
-    background-position: center;
-    display: block;
-    width: 3.25rem;
-    height: 3.25rem;
-    background-size: 3.25rem;
-    background-repeat: no-repeat;
-    transition: all 300ms;
-  }
-  
-  #contact .icons a i {
-    position: absolute;
-    color: #fff;
-    font-size: 1.5rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 300ms;
-  }
-  
-  #contact .icons a:hover i {
-    color: #14bf98;
-  }
-  
-  #contact .icons a:hover span {
-    background-image: none;
-    background-color: #fff;
-  }
-  
-  #contact .right {
-    width: 48%;
-  }
-  
-  #contact .right input[type="text"],
-  #contact .right textarea {
-    padding-top: 1.25rem;
-    padding-bottom: 0.25rem;
-    padding-left: 1.3125rem;
-    border: 1px solid #dadada;
-    border-radius: 0.25rem;
-    background-color: #fff;
-    color: #787976;
-    width: 100%;
-  }
-  
-  #contact .right input[type="text"] {
-    height: 3rem;
-  }
-  
-  #contact .right textarea {
-    height: 8rem;
-  }
-  
-  #contact .right .form-group {
-    margin-bottom: 1.25rem;
-    position: relative;
-  }
-  
-  #contact .right .form-group label {
-    position: absolute;
-    left: 1.375rem;
-    top: 0.8125rem;
-    color: #787976;
-    font-size: 0.87rem;
-    transition: all 300ms;
-  }
-  
-  #contact .right input[type="text"]:focus+label,
-  #contact .right textarea:focus+label {
-    font-size: 0.7rem;
-    top: 0.5rem;
-  }
-  
-  #contact .right .agree,
-  #contact .right .agree a {
-    font-size: 0.875rem;
-    color: #787976;
-  }
-  
-  #contact .right .agree a {
-    text-decoration: underline;
-  }
-  
-  #contact .right button {
-    width: 100%;
-    background-color: #14bf98;
-    color: #fff;
-    border: 2px solid #14bf98;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 0.75rem;
-    cursor: pointer;
-    transition: all 300ms;
-  }
-  
-  #contact .right button:hover {
-    background-color: #fff;
-    color: #14bf98;
-  }
-  
-  /* FOOTER */
-  
-  footer {
-    background-color: #113448;
-    padding-top: 5rem;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
-    font-size: 14px;
-  }
-  
-  footer,
-  footer a {
-    color: #fff;
-  }
-  
-  footer .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  footer .top h2 {
-    margin-bottom: 1rem;
-  }
-  
-  footer .top .left {
-    width: 40%;
-  }
-  
-  footer .top .left p {
-    line-height: 1.5;
-  }
-  
-  footer .top .right {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  footer .top .right ul {}
-  
-  footer .top .right a {
-    text-decoration: underline;
-    margin-bottom: 0.5rem;
-  }
-  
-  footer .bottom {
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-  }
+</html>
